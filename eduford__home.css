@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(eduford_img/banner.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+  align-items: center;
+}
+nav img {
+  padding: 90px;
+  width: 150px;
+}
+nav ul {
+  margin-right: 100px;
+}
+ul li {
+  display: inline-block;
+  font-size: 15px;
+  padding: 8px 12px;
+  text-decoration: none;
+  position: relative;
+}
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: red;
+  width: 0%;
+  left: 0;
+  bottom: -8px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+/* text box  */
+.text_box {
+  margin-top: 110px;
+  text-align: center;
+}
+.text_box .text_box_head {
+  font-size: 62px;
+  color: #fff;
+  font-weight: 900;
+}
+.text_box .text_box_center {
+  margin-top: 15px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: rgb(200, 200, 200);
+}
+.text_box a {
+  text-decoration: none;
+  color: #fff;
+}
+.text_box button {
+  margin-top: 40px;
+  height: 50px;
+  width: 260px;
+  border-radius: 8px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  transition: 1s;
+}
+.text_box button:hover {
+  cursor: pointer;
+  background-color: rgb(245, 73, 73);
+  border: rgb(245, 73, 73);
+}
+.content {
+  min-height: 100vh;
+  text-align: center;
+  margin: 0 150px;
+}
+.content_course h3 {
+  font-weight: 700;
+  font-size: 40px;
+  padding-top: 100px;
+}
+.content_course p {
+  padding-top: 30px;
+}
+.content_study {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-top: 100px;
+  grid-column-gap: 30px;
+}
+.content_study div {
+  background-color: #fff3f3;
+  border-radius: 10px;
+  height: 262px;
+}
+.content_study h4 {
+  padding-top: 25px;
+  font-size: 22px;
+}
+.content p {
+  opacity: 0.6;
+  font-size: 15px;
+}
+.content_study div:hover {
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: 1s;
+}
+.content_global {
+  margin-top: 100px;
+}
+.content_global > h3 {
+  font-size: 35px;
+}
+.content_global > p {
+  margin-top: 30px;
+}
+.content_div {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 100px;
+  grid-column-gap: 20px;
+  position: relative;
+}
+.content_location > img {
+  height: 580px;
+  width: 380px;
+  border-radius: 10px;
+}
+.content_location {
+  position: relative;
+  height: 100%;
+}
+.layer {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  transition: 0.5s;
+  left: 0;
+  top: 0;
+}
+.layer:hover {
+  background: rgb(196, 40, 13);
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.layer h3 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 21px;
+  color: #fff;
+  transition: 0.5s;
+  opacity: 0;
+}
+.layer:hover h3 {
+  bottom: 50%;
+  opacity: 1;
+}
+.content_faci {
+  margin-top: 100px;
+  /* width: 100%; */
+}
+.content_faci h3 {
+  font-size: 36px;
+  letter-spacing: 1;
+}
+.content_faci p {
+  margin-top: 30px;
+}
+.content_active {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+  margin-top: 35px;
+}
+.content_active div img {
+  /* height: 100%; */
+  width: 100%;
+  border-radius: 10px;
+}
+.content_active div h4 {
+  margin-top: 10px;
+}
+.content_say {
+  margin-top: 130px;
+}
+.content_say h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.content_say p {
+  margin-top: 30px;
+}
+.content_say_comment {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 50px;
+}
+.content_say_cmt {
+  height: 200px;
+  width: 580px;
+  background-color: #fff3f3;
+  position: relative;
+  border-radius: 15px;
+}
+
+.content_say_cmt img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10%;
+  top: 25%;
+}
+.content_say_cmt p {
+  position: absolute;
+  top: 10%;
+  left: 25%;
+  text-align: left;
+}
+.content_say_cmt h4 {
+  position: absolute;
+  top: 65%;
+  left: 25%;
+  font-size: 25px;
+  font-weight: 800;
+}
+.content_say_cmt i {
+  position: relative;
+  bottom: 10%;
+  top: 85%;
+  right: 16%;
+  color: rgb(240, 169, 38);
+}
+.content_contactus {
+  height: 400px;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(/eduford_img/banner2.jpg);
+  margin-top: 120px;
+  position: relative;
+}
+.content_contactus h2 {
+  font-size: 35px;
+  color: #fff;
+  font-weight: 900;
+  /* margin-top: 50px; */
+  position: absolute;
+  left: 25%;
+  top: 30%;
+}
+
+.content_contactus button {
+  position: absolute;
+  background-color: transparent;
+  border: 1px solid #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  left: 45%;
+  top: 65%;
+  color: #fff;
+  transition: 0.6s ease-in;
+}
+.content_contactus button:hover {
+  background: rgb(196, 40, 13);
+  border: 0;
+  cursor: pointer;
+}
+.footer {
+  /* margin-top: 120px; */
+  text-align: center;
+  margin: 70px 150px;
+}
+.footer p {
+  margin-top: 30px;
+}
+.footer_icon i {
+  margin: 50px 20px;
+  /* padding: 0 20px; */
+  color: rgb(243, 94, 94);
+}
+.fa-heart {
+  color: rgb(243, 94, 94);
+}

@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  min-height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url(/eduford_img/background.jpg);
+  background-position: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.header nav {
+  display: flex;
+  justify-content: space-between;
+  height: 110px;
+
+  align-items: center;
+}
+nav img {
+  /* height: 110px; */
+  width: 150px;
+  margin-left: 100px;
+}
+nav ul {
+  margin-right: 100px;
+}
+nav ul li {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  background-color: red;
+  width: 0%;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  /* margin: 0 auto; */
+}
+ul li a:hover::after {
+  width: 100%;
+}
+.header h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #fff;
+  margin-top: 80px;
+}
+.content {
+  margin: 0 150px;
+  display: flex;
+  margin-top: 150px;
+}
+.content img {
+  height: 388px;
+  width: 583px;
+}
+.content h1 {
+  font-size: 36px;
+}
+.content p {
+  padding: 20px 0px;
+  opacity: 0.6;
+}
+.content button {
+  padding: 12px 25px;
+  border-radius: 5px;
+  border: 1px solid red;
+  background-color: transparent;
+  cursor: pointer;
+  color: red;
+  transition: 0.8s;
+}
+.content button:hover {
+  background-color: rgb(235, 78, 50);
+  color: #fff;
+}
+.footer {
+  /* margin-top: 120px; */
+  text-align: center;
+  margin: 70px 150px;
+}
+.footer h3 {
+  margin-top: 80px;
+}
+.footer p {
+  margin-top: 30px;
+  opacity: 0.6;
+}
+.footer_icon i {
+  margin: 50px 20px;
+  /* padding: 0 20px; */
+  color: rgb(243, 94, 94);
+}
+.fa-heart {
+  color: rgb(243, 94, 94);
+}
